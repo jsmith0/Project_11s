@@ -79,7 +79,7 @@ public class Card {
 	 * Converts the rank, suit, and point value into a string in the format
 	 *     "[Rank] of [Suit] (point value = [PointValue])".
 	 * This provides a useful way of printing the contents
-	 * of a <code>Deck</code> in an easily readable format or performing
+	 * of a <code>Deck2A</code> in an easily readable format or performing
 	 * other similar functions.
 	 *
 	 * @return a <code>String</code> containing the rank, suit,
