@@ -32,10 +32,7 @@ public class Deck {
 	public Deck(String[] ranks, String[] suits, int[] values) {
 		for (int i = 0; i < ranks.length; i++){
 			for (int q = 0; q < suits.length; q++){
-				for (int x = 0; x<values.length; x++){
-					Card e = new Card(ranks[i], suits[q], values[x]);
-					cards.add(e);
-				}
+				cards.add(new Card(ranks[i], suits[q], values[i]));
 			}
 		}
 	}
