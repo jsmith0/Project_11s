@@ -1,7 +1,7 @@
 /**
  * This is a class that tests the Deck2A class.
  */
-public class DeckTester {
+public class DeckTester2A {
 
 	/**
 	 * The main method in this class checks the Deck2A operations for consistency.
@@ -20,12 +20,12 @@ public class DeckTester {
 		System.out.println();
 		System.out.println();
 
-		System.out.println("**** Deal a Card ****");
+		System.out.println("**** Deal a Card2A ****");
 		System.out.println("  deal: " + d.deal());
 		System.out.println();
 		System.out.println();
 
-		System.out.println("**** Deck2A Methods After 1 Card Dealt ****");
+		System.out.println("**** Deck2A Methods After 1 Card2A Dealt ****");
 		System.out.println("  toString:\n" + d.toString());
 		System.out.println("  isEmpty: " + d.isEmpty());
 		System.out.println("  size: " + d.size());
@@ -46,7 +46,7 @@ public class DeckTester {
 		System.out.println();
 		System.out.println();
 
-		System.out.println("**** Deal a Card From Empty Deck2A ****");
+		System.out.println("**** Deal a Card2A From Empty Deck2A ****");
 		System.out.println("  deal: " + d.deal());
 		System.out.println();
 		System.out.println();

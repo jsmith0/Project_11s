@@ -1,7 +1,7 @@
 /**
- * Card.java
+ * Card2A.java
  *
- * <code>Card</code> represents a playing card.
+ * <code>Card2A</code> represents a playing card.
  */
 public class Card {
 
@@ -22,7 +22,7 @@ public class Card {
 
 
    /**
-	 * Creates a new <code>Card</code> instance.
+	 * Creates a new <code>Card2A</code> instance.
 	 *
 	 * @param cardRank  a <code>String</code> value
 	 *                  containing the rank of the card
@@ -39,37 +39,37 @@ public class Card {
 
 
 	/**
-	 * Accesses this <code>Card's</code> suit.
-	 * @return this <code>Card's</code> suit.
+	 * Accesses this <code>Card2A's</code> suit.
+	 * @return this <code>Card2A's</code> suit.
 	 */
 	public String suit() {
 		return suit.toString();
    }
 
 	/**
-	 * Accesses this <code>Card's</code> rank.
-	 * @return this <code>Card's</code> rank.
+	 * Accesses this <code>Card2A's</code> rank.
+	 * @return this <code>Card2A's</code> rank.
 	 */
 	public String rank() {
 		return rank.toString();
 	}
 
    /**
-	 * Accesses this <code>Card's</code> point value.
-	 * @return this <code>Card's</code> point value.
+	 * Accesses this <code>Card2A's</code> point value.
+	 * @return this <code>Card2A's</code> point value.
 	 */
 	public int pointValue() {
 		return pointValue;
 	}
 
 	/** Compare this card with the argument.
-	 * @param otherCard the other card to compare to this
+	 * @param otherCard2A the other card to compare to this
 	 * @return true if the rank, suit, and point value of this card
 	 *              are equal to those of the argument;
 	 *         false otherwise.
 	 */
-	public boolean matches(Card otherCard) {
-		if (otherCard.rank.equals(rank) && otherCard.suit.equals(suit) && otherCard.pointValue == pointValue){
+	public boolean matches(Card2A otherCard2A) {
+		if (otherCard2A.rank.equals(rank) && otherCard2A.suit.equals(suit) && otherCard2A.pointValue == pointValue){
 			return true;
 		}
 		return false;

@@ -11,7 +11,7 @@ public class Deck {
 	/**
 	 * cards contains all the cards in the deck.
 	 */
-	private List<Card> cards;
+	private List<Card2A> cards;
 
 	/**
 	 * size is the number of not-yet-dealt cards.
@@ -33,16 +33,16 @@ public class Deck {
 		/* MY STUFF
 		for (int i = 0; i < ranks.length; i++){
 			for (int q = 0; q < suits.length; q++){
-				cards.add(new Card(ranks[i], suits[q], values[i]));
+				cards.add(new Card2A(ranks[i], suits[q], values[i]));
 			}
 		}
 		*/
 
 		//YOUR STUFF
-		cards = new ArrayList<Card>();
+		cards = new ArrayList<Card2A>();
 		for (int j = 0; j < ranks.length; j++) {
 			for (String suitString : suits) {
-				cards.add(new Card(ranks[j], suitString, values[j]));
+				cards.add(new Card2A(ranks[j], suitString, values[j]));
 			}
 		}
 		size = cards.size();
@@ -78,8 +78,8 @@ public class Deck {
 	 String [] pointValues = {"2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "11", "11", "11"}
 	 Deck2A d = new Deck2A(ranks, suits, pointValues);
 	 */
-	public void shuffle() {
-		/* *** TO BE IMPLEMENTED IN ACTIVITY 4 *** */
+	public void shuffle(int [] values) {
+		Shuffler.selectionShuffle(values);
 	}
 
 	/**
@@ -87,7 +87,7 @@ public class Deck {
 	 * @return the card just dealt, or null if all the cards have been
 	 *         previously dealt.
 	 */
-	public Card deal() {
+	public Card2A deal() {
 		/* MY STUFF
 		size--;
 		if(size != -1) {
@@ -101,7 +101,7 @@ public class Deck {
 			return null;
 		}
 		size--;
-		Card c = cards.get(size);
+		Card2A c = cards.get(size);
 		return c;
 	}
 
